@@ -1,4 +1,4 @@
-const tinderuser = {}
+/*const tinderuser = {}
 tinderuser.id = 1234
 tinderuser.name = "Anchal"
 tinderuser.loggedIn = true
@@ -16,7 +16,18 @@ const regularuser = {
 console.log(regularuser.name.first,);
 console.log(Object.keys(tinderuser));
 console.log(Object.values(tinderuser));
-console.log(Object.entries(tinderuser));
+console.log(Object.entries(tinderuser));*/
+const course = {
+    coursename: "js-hindi",
+    duration: 20,
+    courseinstructor: "hitesh"
+}
+const {courseinstructor:instructor} = course
+ // METHOD OF DESTRUCTURING
+ console.log(instructor);
+ 
+  
+
 
 
 
