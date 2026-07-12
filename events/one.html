@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML events</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <div>
+        <h2>Amazing Images</h2>
+        <ul id="images">
+            <li><img width="400px" id="radar" src="Radar system.jpg"></li>
+            <li><img width="400px" id="gemini" src="Gemini_Generated_Image_6zj3m86zj3m86zj3.png"></li>
+            <li><img width="400px" id="lc" src="LC 100.png"></li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById('lc').onclick = function(){
+            alert('You have hit 50 questions on LC')
+        }
+        document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    
+        
+    })
+    </script>
+</body>
+</html>
